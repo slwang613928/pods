@@ -82,7 +82,7 @@ extern NSString *const FBDiffedImageKey;
  @param testName The name of the tests.
  @returns An instance of FBSnapshotTestController.
  */
-- (instancetype)initWithTestName:(NSString *)testName;
+- (instancetype)initWithTestName:(NSString *)testName NS_DESIGNATED_INITIALIZER;
 
 /**
  Performs the comparison of the layer.

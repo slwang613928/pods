@@ -15,6 +15,6 @@
 /**
   @return The receiver's @c keyWindow. Raises an assertion if @c nil.
  */
-- (UIWindow *)fb_strictKeyWindow;
+@property (NS_NONATOMIC_IOSONLY, readonly, strong) UIWindow *fb_strictKeyWindow;
 
 @end

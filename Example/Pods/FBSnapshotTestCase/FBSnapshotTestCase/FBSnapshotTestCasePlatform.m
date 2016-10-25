@@ -27,7 +27,7 @@ NSOrderedSet *FBSnapshotTestCaseDefaultSuffixes(void)
   [suffixesSet addObject:@"_32"];
   [suffixesSet addObject:@"_64"];
   if (FBSnapshotTestCaseIs64Bit()) {
-    return [suffixesSet reversedOrderedSet];
+    return suffixesSet.reversedOrderedSet;
   } 
   return [suffixesSet copy];
 }

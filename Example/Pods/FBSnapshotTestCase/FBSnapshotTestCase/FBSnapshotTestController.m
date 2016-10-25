@@ -57,7 +57,7 @@ typedef NS_ENUM(NSUInteger, FBTestSnapshotFileNameType) {
 
 - (NSString *)description
 {
-  return [NSString stringWithFormat:@"%@ %@", [super description], _referenceImagesDirectory];
+  return [NSString stringWithFormat:@"%@ %@", super.description, _referenceImagesDirectory];
 }
 
 #pragma mark - Public API
@@ -167,7 +167,7 @@ typedef NS_ENUM(NSUInteger, FBTestSnapshotFileNameType) {
                                                 fileNameType:FBTestSnapshotFileNameTypeFailedReference];
 
   NSError *creationError = nil;
-  BOOL didCreateDir = [_fileManager createDirectoryAtPath:[referencePath stringByDeletingLastPathComponent]
+  BOOL didCreateDir = [_fileManager createDirectoryAtPath:referencePath.stringByDeletingLastPathComponent
                               withIntermediateDirectories:YES
                                                attributes:nil
                                                     error:&creationError];
@@ -237,8 +237,8 @@ typedef NS_ENUM(NSUInteger, FBTestSnapshotFileNameType) {
     fileName = FBDeviceAgnosticNormalizedFileName(fileName);
   }
   
-  if ([[UIScreen mainScreen] scale] > 1) {
-    fileName = [fileName stringByAppendingFormat:@"@%.fx", [[UIScreen mainScreen] scale]];
+  if ([UIScreen mainScreen].scale > 1) {
+    fileName = [fileName stringByAppendingFormat:@"@%.fx", [UIScreen mainScreen].scale];
   }
   fileName = [fileName stringByAppendingPathExtension:@"png"];
   return fileName;
@@ -312,7 +312,7 @@ typedef NS_ENUM(NSUInteger, FBTestSnapshotFileNameType) {
     NSData *pngData = UIImagePNGRepresentation(image);
     if (nil != pngData) {
       NSError *creationError = nil;
-      BOOL didCreateDir = [_fileManager createDirectoryAtPath:[filePath stringByDeletingLastPathComponent]
+      BOOL didCreateDir = [_fileManager createDirectoryAtPath:filePath.stringByDeletingLastPathComponent
                                   withIntermediateDirectories:YES
                                                    attributes:nil
                                                         error:&creationError];
