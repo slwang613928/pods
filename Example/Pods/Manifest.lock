@@ -1,0 +1,16 @@
+PODS:
+  - WSLWebImage (0.1.0)
+
+DEPENDENCIES:
+  - WSLWebImage (from `../`)
+
+EXTERNAL SOURCES:
+  WSLWebImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WSLWebImage: cf9fb9e6b9885be061865894f1e883ca1274cfe8
+
+PODFILE CHECKSUM: dc1d4d20a6380ef2616274f59f177b9760c8ad0f
+
+COCOAPODS: 1.0.1
