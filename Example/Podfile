@@ -1,0 +1,6 @@
+use_frameworks!
+target 'WSLWebImage_Tests' do
+  pod 'WSLWebImage', :path => '../'
+  
+  
+end
