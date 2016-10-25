@@ -14,4 +14,5 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/slwang613928/pods.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'podTestLibrary/Classes/**/*'
+  s.dependency 'SDWebImage', '~> 4.0.0-beta2'
 end
