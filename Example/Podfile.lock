@@ -1,0 +1,16 @@
+PODS:
+  - WSLCycleScrollView (0.1.0)
+
+DEPENDENCIES:
+  - WSLCycleScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  WSLCycleScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WSLCycleScrollView: c540d0735eb5ccebed03d7b6ef14f9a448091c51
+
+PODFILE CHECKSUM: 14e4c9045155380601823b814d2a568da1a9ecb7
+
+COCOAPODS: 1.0.1
